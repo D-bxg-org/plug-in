@@ -12,6 +12,6 @@
     * [cnpm](node/npm/cnpm.md)
     * [nrm](node/npm/nrm.md)
   * [yarn](node/yarn.md)
-* [maven](maven-1/README.md)
-  * [Idea中创建一个maven项目](maven-1/idea-zhong-chuang-jian-yi-ge-maven-xiang-mu.md)
+* [maven](maven/README.md)
+  * [Idea中创建一个maven项目](maven/idea-zhong-chuang-jian-yi-ge-maven-xiang-mu.md)
 
