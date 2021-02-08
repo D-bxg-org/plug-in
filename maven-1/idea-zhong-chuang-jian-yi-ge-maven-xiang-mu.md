@@ -2,7 +2,7 @@
 
 我们首先使用maven创建一个project后，首先需要填写name。
 
-![1](../.gitbook/assets/1.png)
+![](../.gitbook/assets/maven-1.png)
 
 name作为整个项目的name，在下方Artifacts coordinate中的name作为模块（modules）的name。
 
