@@ -1,3 +1,7 @@
+---
+description: Git、GitHub、多人开发，都可以在此学到
+---
+
 # Git
 
 ## 1 为什么要讲
