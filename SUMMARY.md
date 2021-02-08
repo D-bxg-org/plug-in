@@ -1,10 +1,10 @@
 # Table of contents
 
 * [Initial page](README.md)
-
-## git
-
-* [Untitled](git/untitled.md)
+* [Git](git/README.md)
+  * [Git](git/git.md)
+  * [GitHub](git/github.md)
+  * [GitBook](git/gitbook.md)
 
 ## maven
 
