@@ -58,7 +58,13 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 * [然后把ssh锁给GitHub](https://blog.csdn.net/fenghuibian/article/details/73350890)
-* 然后把本地和远程仓库（就是GitHub）进行连接，这些要在**初始化好本地仓库后**![1-1.png](../.gitbook/assets/git-github-4-1-1.png)![1-2.png](../.gitbook/assets/git-github-4-1-2.png)  在这个步骤中，有一些值的讲的： 你与远端建立连接时，相当于执行了下面这条Git命令：
+* 然后把本地和远程仓库（就是GitHub）进行连接，这些要在**初始化好本地仓库后**
+
+![1-1.png](../.gitbook/assets/git-github-4-1-1.png)
+
+![1-2.png](../.gitbook/assets/git-github-4-1-2.png)
+
+* 在这个步骤中，有一些值的讲的： 你与远端建立连接时，相当于执行了下面这条Git命令：
 
 ```text
 `这里使用的是ssh连接`
@@ -74,7 +80,9 @@ git remote add origin https://github.com/Username/projects.git
 
 #### **4.1.2 http**
 
-无需上面配置ssh锁和钥匙的过程，直接进到上面的第4步：![1-3.png](../.gitbook/assets/git-github-4-1-3.png)
+无需上面配置ssh锁和钥匙的过程，直接进到上面的第4步：
+
+![1-3.png](../.gitbook/assets/git-github-4-1-3.png)
 
 ### 4.2 下载问题——pull/fetch
 
@@ -113,8 +121,8 @@ git remote update
 
 ```text
 git branch --set-upstream-to=origin/master master
-                                                                    ↑                       ↑
-                                                这里是远端分支             这里是本地分支
+                                  ↑          ↑
+                          这里是远端分支      这里是本地分支
 ```
 
 #### 4.2.3
