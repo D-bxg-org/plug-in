@@ -1,6 +1,6 @@
 # GitHub
 
-## 1 我会怎么讲解 
+## 1 我会怎么讲解&#x20;
 
 和Git一样，我在此处不会讲解GitHub的基础使用，而是为下面的多人开发打基础，来讲解我们究竟是如何使用GitHub的。
 
@@ -44,16 +44,19 @@ GitHub的使用，就是**GitHub与本地连接，和上传下载的过程**。�
 
 我在此处用人话简述一下过程：
 
-* 在制作ssh锁和钥匙前，首先要看一下我们电脑内有没有锁和钥匙。 它的所在路径是C:\Users\Administrator\.ssh  当然你也可以在Git Bash中使用下面代码，来查看是否拥有
+* 在制作ssh锁和钥匙前，首先要看一下我们电脑内有没有锁和钥匙。\
+  它的所在路径是C:\Users\Administrator\\.ssh\
+  \
+  当然你也可以在Git Bash中使用下面代码，来查看是否拥有
 
-```text
+```
 $ cd ~/.ssh
 $ ls
 ```
 
 * 如果我们没有ssh锁（公钥）和钥匙，那么我们就要制作一份
 
-```text
+```
 $ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
@@ -64,9 +67,10 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 
 ![1-2.png](../.gitbook/assets/git-github-4-1-2.png)
 
-* 在这个步骤中，有一些值的讲的： 你与远端建立连接时，相当于执行了下面这条Git命令：
+* 在这个步骤中，有一些值的讲的：\
+  你与远端建立连接时，相当于执行了下面这条Git命令：
 
-```text
+```
 `这里使用的是ssh连接`
 git remote add origin git@github.com:Username/projects.git
 
@@ -100,11 +104,11 @@ git remote add origin https://github.com/Username/projects.git
 
 ![2-1.png](../.gitbook/assets/git-github-4-2-2.png)
 
-然后再使用下面该步骤拉取远程仓库分支，值的注意的是，无论你源仓库有多少分支，都是如此拉取。  
-**若没有显示分支，则刷新一次即可。**  
-若刷新也无效，则使用：
+然后再使用下面该步骤拉取远程仓库分支，值的注意的是，无论你源仓库有多少分支，都是如此拉取。\
+**若没有显示分支，则刷新一次即可。**\
+****若刷新也无效，则使用：
 
-```text
+```
 git remote update
 ```
 
@@ -112,14 +116,14 @@ git remote update
 
 #### 4.2.**2**
 
-**把本地的分支与远程的分支合并起来**，值的注意的是，无论你源仓库有多少分支，都是如此合并（如果远端的分支本地没有，则自行在本地创建后再连接远端分支）  
+**把本地的分支与远程的分支合并起来**，值的注意的是，无论你源仓库有多少分支，都是如此合并（如果远端的分支本地没有，则自行在本地创建后再连接远端分支）\
 如果我们本地的master分支没有合并（链接）到远程的master分支连接，切换本地master分支和远端origin/master分支时就会出现下面该错误：
 
 ![2-3.png](../.gitbook/assets/git-github-4-2-4.png)
 
 所以我们要把本地的master分支和远程的master分支链接（合并）一下，在终端中输入该指令：
 
-```text
+```
 git branch --set-upstream-to=origin/master master
                                   ↑          ↑
                           这里是远端分支      这里是本地分支
@@ -169,8 +173,8 @@ git branch --set-upstream-to=origin/master master
 
 ![1-5.png](../.gitbook/assets/git-github-4-3-5.png)
 
-并且你的GitHub上也会更新。如此一来，如果你会使用Git，那么你就应当能独立完成把本地项目迭代，并上传至GitHub的步骤了！  
-  
+并且你的GitHub上也会更新。如此一来，如果你会使用Git，那么你就应当能独立完成把本地项目迭代，并上传至GitHub的步骤了！\
+\
 值的注意的是，分支和标签也都应该一并上传。
 
 ### 4.4 从别人那下载
@@ -188,4 +192,3 @@ git branch --set-upstream-to=origin/master master
 我们至此，已经完全可以进行独立的，自己项目在本地和远端的管理了，而我们看到，与远端连接，在本地的显示，实际上也还是一种分支。
 
 所以我们可以这么说，我们本地的分支，是从源项目分出去，最后合并到远端分支的。也就是说，每个参与多人合作的开发者，都是从源仓库origin/master分支分出去，到自己本地的master分支，然后在自己的developer分支上进行开发后，与本地的
-
